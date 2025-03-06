@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formu.css" media="screen">
+    <title>Cadastro DEVs</title>
+    <style>
+       #particles-js{
+            background-color: rgb(139, 129, 151);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+
+        <div class="container">
+          <h1 id="titulo">Cadastro de Devs</h1>
+          <p id="subtitulo">Complete suas informações</p>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+              <div class="campo1">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+              </div>
+              
+              <div class="campo2">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+              </div>
+            </fieldset>
+        
+            <div class="campo3">
+              <label for="email"><strong>Email</strong></label>
+              <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo4">
+                <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+                <label>
+                  <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                  <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+              </div>
+
+              <div>
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade">
+                  <option selected disabled value="Selecione"></option>
+                  <option>Junior</option>
+                  <option>Pleno</option>
+                  <option>Senior</option>
+                </select>
+              </div>
+              
+            <fieldset class="grupo">
+                <div id="check">
+                  <label><strong>Selecione as tecnologias que utiliza:</strong></label>
+                  <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                  <label for="tecnologia1">HTML</label>
+                  <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                  <label for="tecnologia2">CSS</label>
+                  <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                  <label for="tecnologia3">Javascript</label>
+                  <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                  <label for="tecnologia4">PHP</label>
+                  <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                  <label for="tecnologia5">C#</label>
+                  <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                  <label for="tecnologia6">Python</label>
+                  <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                  <label for="tecnologia7">Java</label>
+                </div>
+            </fieldset>
+        
+            <div>
+                <br>
+                <label><strong>Conte um pouco da sua experiência:</strong></label>
+                <textarea rows="6" style="width: 26em" id="experiência" name="experiência"></textarea>
+              </div>
+          
+              <button class="botao" type="submit">Concluido</button>
+            </form>
+          
+
+
+    <div id="particles-js"></div>
+
+    <script src="particles.min.js"></script>
+    <script>
+        particlesJS(
+            {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#240d34"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#aa0d0d"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "top",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 1183.721462448409,
+                            "rotateY": 631.3181133058181
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": false
+            }
+        )
+    </script>
+</body>
+
+</html>
